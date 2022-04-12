@@ -64,8 +64,8 @@ def create_sequences(colors, vte_fix=False):
             set_special(708, colors["special"]["background"], "", alpha)
         )
 
-    if OS == "Darwin":
-        sequences += set_iterm_tab_color(colors["special"]["background"])
+#     if OS == "Darwin":
+#         sequences += set_iterm_tab_color(colors["special"]["background"])
 
     return "".join(sequences)
 
